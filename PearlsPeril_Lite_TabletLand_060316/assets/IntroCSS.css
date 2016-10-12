@@ -1,0 +1,27 @@
+
+.introBG{
+	background-image:url('IntroBG_iPad.png');
+	width:1024px;
+	height:768px;
+	left:0;
+	top:0;
+	position:absolute;
+}
+
+.arrow{
+	background-image:url('arrow_iPad.png');
+	width:63px;
+	height:93px;
+	position:absolute;
+	-webkit-animation:bounce .4s infinite alternate;
+}
+
+.arrowg{
+	left:171px;
+	top:200px;
+}
+
+@-webkit-keyframes bounce{
+	from{-webkit-transform:translateY(0px);}
+	to{-webkit-transform:translateY(-50px);}
+}

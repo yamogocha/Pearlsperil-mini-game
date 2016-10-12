@@ -1,0 +1,85 @@
+<!--Feel free to add to, delete or edit these script and link tags-->
+<script src="assets/GameJS.js"></script>
+<link rel="stylesheet" href="assets/GameCSS.css">
+<script src="assets/OutroJS.js"></script>
+<link rel="stylesheet" href="assets/OutroCSS.css">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+<!--Main Container that holds everything in an absolute position to hold everything in place in the UI-->
+<!--All html coding for your project should be done inside this "main-container"-->
+<!--Feel free to add to, delete or edit any or all of the html that is currently inside this container-->
+<!--Just be sure to keep the css that defines the styling for the "main-container"-->
+<div id="main-container">
+
+		<!--backgroundImage: all other gameplay elements are children of this div.-->
+		<div id="game-container" class="container">
+			<div class="background"><div>
+			<span id="gbox" class="box">
+				<h3>GLOVES</h3>
+			</span>
+			<span id="wbox" class="box">
+				<h3>WALKING STICK</h3>
+			</span>
+			<span id="pbox" class="box">
+				<h3>PHONE</h3>
+			</span>
+			<span id="arrow" class="arrow arrowg" ></span>
+			<div id="gitem" onclick="clickGloves();">
+				<span id="gglow"></span>
+				<span class="gloves"></span>
+				<span class="gmask gloves">
+					<span class="gshine"></span>
+				</span>
+			</div>
+			<div id="witem" onclick="clickWStick();">
+				<span id="wglow"></span>
+				<span class="wstick"></span>
+				<span class="wmask wstick">
+					<span class="wshine"></span>
+				</span>
+			</div>
+			<div id="pitem" onclick="clickPhone();">
+				<span id="pglow"></span>
+				<span class="phone"></span>
+				<span class="pmask phone">
+					<span class="pshine"></span>
+				</span>
+			</div>
+		</div>
+
+		<!-- OUTRO SPECIFIC HTML -->
+		<!--backgroundImage: all other outro elements are children of this div.-->
+		<div id="outro-container" class="container" style="display:none">
+
+			<!--Put all background animation (all animation that exists behind the buttons but in front of the background... ex: snow, rain, or bubbles) inside this empty div-->
+			<div id="animation-container">
+				<!-- uncomment the following code for midcore:
+				<div id="end-scenario"></div> -->
+			</div>
+
+			<!--ThanksForPlaying: we will assign a class and Id to be able to change it between screens-->
+			<div id="bottom-button">
+			</div>
+
+			<!--DLbutton: margin: auto; allows the button to be centered automatically!-->
+			<div id="top-button">
+			</div>
+
+			<!--Logo: this is an empty div. Just add a background-image:url('');-->
+			<div id="logo">
+			</div>
+
+			<!--AppIcon-->
+			<div id="appicon">
+			</div>
+
+			<!--mNectar Branding-->
+			<div id="mnectarbranding">
+			</div>
+
+			<!--ClickURL that sends the user to the landing page-->
+			<div id="dl-div" onclick="clickDownload();">
+			</div>
+		</div>
+
+</div>

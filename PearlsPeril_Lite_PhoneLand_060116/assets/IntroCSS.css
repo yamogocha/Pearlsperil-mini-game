@@ -1,0 +1,27 @@
+
+.introBG{
+	background-image:url('introBG_iPhone.png');
+	width:568px;
+	height:320px;
+	left:0;
+	top:0;
+	position:absolute;
+}
+
+.arrow{
+	background-image:url('arrow_iPhone.png');
+	width:29px;
+	height:43px;
+	position:absolute;
+	-webkit-animation:bounce .4s infinite alternate;
+}
+
+.arrowg{
+	left:133px;
+	top:70px;
+}
+
+@-webkit-keyframes bounce{
+	from{-webkit-transform:translateY(0px);}
+	to{-webkit-transform:translateY(-30px);}
+}

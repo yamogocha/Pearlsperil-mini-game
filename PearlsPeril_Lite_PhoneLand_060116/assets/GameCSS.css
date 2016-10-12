@@ -1,0 +1,271 @@
+
+.background{
+	background-image:url('gameBG_iPhone.png');
+	width:568px;
+	height:320px;
+	left:0;
+	top:0;
+	position:absolute;
+}
+
+.arrow{
+	background-image:url('arrow_iPhone.png');
+	width:29px;
+	height:43px;
+	position:absolute;
+	opacity:0;
+	-webkit-animation:bounce .4s infinite alternate 5s;
+}
+
+.arrowg{
+	left:133px;
+	top:70px;
+}
+
+.arroww{
+	left:303px;
+	top:133px;
+	-webkit-animation:bounce2 .4s infinite alternate 5s;
+}
+
+.arrowp{
+	left:310px;
+	top:53px;
+	-webkit-animation:bounce3 .4s infinite alternate 5s;
+}
+
+#gitem{
+	width:42px;
+	height:22px;
+	position:absolute;
+	left:130px;
+	top:120px;
+}
+
+.glovesmove{
+	-webkit-animation:glovesmove 2s;
+}
+
+.gloves{
+	background-image:url('gloves_iPhone.png');
+	width:42px;
+	height:22px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+#gglow{
+	background-image:url('gglow_iPhone.png');
+	width:72px;
+	height:52px;
+	position:absolute;
+	left:-15px;
+	top:-15px;
+	opacity:0;
+}
+
+.gmask{
+	-webkit-mask:url('gloves_iPhone.png');
+	overflow:hidden;
+}
+
+.gshine{
+	background:white;
+	-webkit-filter:blur(1px);
+	opacity:.8;
+	width:18px;
+	height:40px;
+	position:absolute;
+	left:-11px;
+	top:-14px;
+	-webkit-animation:gshine 12s infinite;
+}
+
+#witem{
+	width:190px;
+	height:44px;
+	position:absolute;
+	left:230px;
+	top:173px;
+}
+
+.wstickmove{
+	-webkit-animation:wstickmove 2s;
+}
+
+.wstick{
+	background-image:url('walkingstick_iPhone.png');
+	width:190px;
+	height:44px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+#wglow{
+	background-image:url('wsGlow_iPhone.png');
+	width:219px;
+	height:73px;
+	position:absolute;
+	left:-15px;
+	top:-15px;
+	opacity:0;
+}
+
+.wmask{
+	-webkit-mask:url('walkingstick_iPhone.png');
+	overflow:hidden;
+}
+
+.wshine{
+	background:white;
+	-webkit-filter:blur(1px);
+	opacity:.8;
+	width:18px;
+	height:90px;
+	position:absolute;
+	left:-49px;
+	top:-24px;
+	-webkit-transform: rotate(45deg);
+	-webkit-animation:wshine 12s infinite;
+}
+
+#pitem{
+	width:30px;
+	height:45px;
+	position:absolute;
+	left:313px;
+	top:11px;
+}
+
+.phonemove{
+	-webkit-animation:phonemove 2.8s;
+}
+
+.phone{
+	background-image:url('phone_iPhone.png');
+	width:30px;
+	height:45px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+#pglow{
+	background-image:url('pglow_iPhone.png');
+	width:60px;
+	height:75px;
+	position:absolute;
+	left:-15px;
+	top:-15px;
+	opacity:0;
+}
+
+.pmask{
+	-webkit-mask:url('phone_iPhone.png');
+	overflow:hidden;
+}
+
+.pshine{
+	background:white;
+	-webkit-filter:blur(1px);
+	opacity:.8;
+	width:18px;
+	height:60px;
+	position:absolute;
+	left:5px;
+	top:-55px;
+	-webkit-transform: rotate(55deg);
+	-webkit-animation:pshine 12s infinite;
+}
+
+.hide{
+	-webkit-animation:hide .5s;
+}
+
+.box{
+	background-color:#401201;
+	border:.2px solid #FFE600;
+	border-radius:5px;
+	width:91px;
+	height:16px;
+	position:absolute;
+}
+
+#gbox{
+	left:102px;
+	top:285px;
+}
+
+#wbox{
+	left:199px;
+	top:285px;
+}
+
+#pbox{
+	left:296px;
+	top:285px;
+}
+
+h3{
+	color:#FFE000;
+    font-size:8px;
+    text-align:center;
+    letter-spacing:1px;
+    font-family:'Lato', sans-serif;
+    width:100px;
+    position:absolute;
+    left:-4px;
+    top:2px;
+}
+
+@-webkit-keyframes gshine{
+	0%{left:-11px;}
+	5%, 100%{left:49px;}
+}
+
+@-webkit-keyframes wshine{
+	0%, 40%{left:-49px;}
+	50%, 100%{left:213px;}
+}
+
+@-webkit-keyframes pshine{
+	0%, 80%{top:-55px;}
+	85%, 100%{top:39px;}
+}
+
+@-webkit-keyframes bounce{
+	from{-webkit-transform:translateY(0px); opacity:1;}
+	to{-webkit-transform:translateY(-30px); opacity:1;}
+}
+
+@-webkit-keyframes bounce2{
+	from{-webkit-transform:translateY(0px); opacity:1;}
+	to{-webkit-transform:translateY(-30px); opacity:1;}
+}
+
+@-webkit-keyframes bounce3{
+	from{-webkit-transform:scaleY(-1) translateY(0px); opacity:1;}
+	to{-webkit-transform:scaleY(-1) translateY(-30px); opacity:1;}
+}
+
+@-webkit-keyframes glovesmove{
+	0%, 15%{-webkit-transform:scale(1) translateY(0px);}
+	100%{-webkit-transform:scale(0.2) translateY(530px);}
+}
+
+@-webkit-keyframes wstickmove{
+	0%, 15%{-webkit-transform:scale(1) translate(0px, 0px);}
+	100%{-webkit-transform:scale(0.1) translate(-280px, 380px);}
+}
+
+@-webkit-keyframes phonemove{
+	0%, 15%{-webkit-transform:scale(1) translateY(0px);}
+	100%{-webkit-transform:scale(0.1) translateY(930px);}
+}
+
+@-webkit-keyframes hide{
+	from{-webkit-transform:scale(1);}
+	to{-webkit-transform:scale(0);}
+}
